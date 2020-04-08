@@ -1,8 +1,15 @@
 using System;
+
 namespace HomeWork._07._04
 {
+    //В классе 4 метода с 5 перегрузками в каждом
     static class ArrayHelper
     {
+        /// <summary>
+        /// Удаляет послдений элемент массива и возвращает удаленный элемент используя return
+        /// </summary>
+        /// <param name="array">Массив последний элемент которого удаляем</param>
+        /// <returns></returns>
         public static string Pop (ref string[] array)
         {
             string arr = array[array.Length-1];
@@ -33,6 +40,12 @@ namespace HomeWork._07._04
             Array.Resize(ref array,array.Length-1);
             return arr;
         }
+        /// <summary>
+        /// Добавляет элемент в конец массива и возвращает обновленную длину массива
+        /// </summary>
+        /// <param name="array">Массив в конец которого добавляем передаваемый элемент</param>
+        /// <param name="el">Элемент который добавляется в конец передаваемого массива</param>
+        /// <returns></returns>
         public static int Push (ref string[] array,string el)
         {
             Array.Resize(ref array,array.Length+1);
@@ -63,6 +76,11 @@ namespace HomeWork._07._04
             array[array.Length-1] = el;
             return array.Length;
         }
+        /// <summary>
+        /// Удаляет первый элемент массива и возвращает этот удаленный элемент используя return, дял этого внутри 
+        /// </summary>
+        /// <param name="array">Массив первый элемент которого удаляем</param>
+        /// <returns></returns>
         public static string Shift (ref string[] array)
         {
             Array.Reverse(array);
@@ -103,6 +121,12 @@ namespace HomeWork._07._04
             Array.Reverse(array);
             return arr;
         }
+        /// <summary>
+        /// Добавляет элемент в начало массива и возвращает обновленную длину массива
+        /// </summary>
+        /// <param name="array">Массив в начало которого добавляем передаваемый элемент</param>
+        /// <param name="el">Элемент который добавится в начале передаваемого массива</param>
+        /// <returns></returns>
         public static int UnShift (ref string[] array,string el)
         {
             Array.Reverse(array);
