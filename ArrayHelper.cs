@@ -33,5 +33,35 @@ namespace HomeWork._07._04
             Array.Resize(ref array,array.Length-1);
             return arr;
         }
+        public static int Push (ref string[] array,string el)
+        {
+            Array.Resize(ref array,array.Length+1);
+            array[array.Length-1] = el;
+            return array.Length;
+        }
+        public static int Push (ref int[] array,int el)
+        {
+            Array.Resize(ref array,array.Length+1);
+            array[array.Length-1] = el;
+            return array.Length;
+        }
+        public static int Push (ref double[] array,double el)
+        {
+            Array.Resize(ref array,array.Length+1);
+            array[array.Length-1] = el;
+            return array.Length;
+        }
+        public static int Push (ref decimal[] array,decimal el)
+        {
+            Array.Resize(ref array,array.Length+1);
+            array[array.Length-1] = el;
+            return array.Length;
+        }
+        public static int Push (ref float[] array,float el)
+        {
+            Array.Resize(ref array,array.Length+1);
+            array[array.Length-1] = el;
+            return array.Length;
+        }
     }
 }
