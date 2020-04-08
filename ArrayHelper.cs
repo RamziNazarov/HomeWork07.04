@@ -63,5 +63,45 @@ namespace HomeWork._07._04
             array[array.Length-1] = el;
             return array.Length;
         }
+        public static string Shift (ref string[] array)
+        {
+            Array.Reverse(array);
+            string arr = array[array.Length-1];
+            Array.Resize(ref array,array.Length-1);
+            Array.Reverse(array);
+            return arr;
+        }
+        public static int Shift (ref int[] array)
+        {
+            Array.Reverse(array);
+            int arr = array[array.Length-1];
+            Array.Resize(ref array,array.Length-1);
+            Array.Reverse(array);
+            return arr;
+        }
+        public static double Shift (ref double[] array)
+        {
+            Array.Reverse(array);
+            double arr = array[array.Length-1];
+            Array.Resize(ref array,array.Length-1);
+            Array.Reverse(array);
+            return arr;
+        }
+        public static decimal Shift (ref decimal[] array)
+        {
+            Array.Reverse(array);
+            decimal arr = array[array.Length-1];
+            Array.Resize(ref array,array.Length-1);
+            Array.Reverse(array);
+            return arr;
+        }
+        public static float Shift (ref float[] array)
+        {
+            Array.Reverse(array);
+            float arr = array[array.Length-1];
+            Array.Resize(ref array,array.Length-1);
+            Array.Reverse(array);
+            return arr;
+        }
     }
 }
