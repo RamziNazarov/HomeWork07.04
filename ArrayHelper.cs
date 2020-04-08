@@ -103,5 +103,45 @@ namespace HomeWork._07._04
             Array.Reverse(array);
             return arr;
         }
+        public static int UnShift (ref string[] array,string el)
+        {
+            Array.Reverse(array);
+            Array.Resize(ref array,array.Length-1);
+            array[array.Length-1] = el;
+            Array.Reverse(array);
+            return array.Length;
+        }
+        public static int UnShift (ref int[] array,int el)
+        {
+            Array.Reverse(array);
+            Array.Resize(ref array,array.Length-1);
+            array[array.Length-1] = el;
+            Array.Reverse(array);
+            return array.Length;
+        }
+        public static int UnShift (ref double[] array,double el)
+        {
+            Array.Reverse(array);
+            Array.Resize(ref array,array.Length-1);
+            array[array.Length-1] = el;
+            Array.Reverse(array);
+            return array.Length;
+        }
+        public static int UnShift (ref decimal[] array,decimal el)
+        {
+            Array.Reverse(array);
+            Array.Resize(ref array,array.Length-1);
+            array[array.Length-1] = el;
+            Array.Reverse(array);
+            return array.Length;
+        }
+        public static int UnShift (ref float[] array,float el)
+        {
+            Array.Reverse(array);
+            Array.Resize(ref array,array.Length-1);
+            array[array.Length-1] = el;
+            Array.Reverse(array);
+            return array.Length;
+        }
     }
 }
